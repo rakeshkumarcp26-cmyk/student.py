@@ -1,6 +1,7 @@
 # Import the grade calculation function from main program
 from student import calculate_grade
 
+
 # ---------------- GRADE S TEST CASES ----------------
 
 # Test lower boundary for Grade S (exactly 90)
@@ -14,6 +15,7 @@ def test_grade_S_middle_value():
 # Test upper boundary for Grade S (exactly 100)
 def test_grade_S_upper_boundary():
     assert calculate_grade(100) == "S"
+
 
 # ---------------- GRADE A TEST CASES ----------------
 
@@ -29,6 +31,7 @@ def test_grade_A_middle_value():
 def test_grade_A_upper_boundary():
     assert calculate_grade(89.99) == "A"
 
+
 # ---------------- GRADE B TEST CASES ----------------
 
 # Test lower boundary for Grade B (exactly 65)
@@ -42,6 +45,7 @@ def test_grade_B_middle_value():
 # Test upper boundary just below 80
 def test_grade_B_upper_boundary():
     assert calculate_grade(79.99) == "B"
+
 
 # ---------------- GRADE C TEST CASES ----------------
 
@@ -57,6 +61,7 @@ def test_grade_C_middle_value():
 def test_grade_C_upper_boundary():
     assert calculate_grade(64.99) == "C"
 
+
 # ---------------- GRADE D TEST CASES ----------------
 
 # Test lower boundary for Grade D (exactly 40)
@@ -70,6 +75,7 @@ def test_grade_D_middle_value():
 # Test upper boundary just below 50
 def test_grade_D_upper_boundary():
     assert calculate_grade(49.99) == "D"
+
 
 # ---------------- GRADE F TEST CASES ----------------
 
